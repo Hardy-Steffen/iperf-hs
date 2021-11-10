@@ -60,7 +60,7 @@
 		2B554C4E227B9DBF009F4932 /* iperf_auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iperf_auth.c; sourceTree = "<group>"; };
 		2B554C4F227B9DBF009F4932 /* iperf_auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iperf_auth.h; sourceTree = "<group>"; };
 		2B5F0AA6228CBA51007D5E7D /* iperf.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = iperf.profdata; sourceTree = "<group>"; };
-		2B6855E71DCF72D60009ABFD /* iperf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iperf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6855E71DCF72D60009ABFD /* iperf hs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iperf hs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B87F62B1DCF74DD00AA24E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B87F62C1DCF74DD00AA24E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B87F6301DCF76B900AA24E7 /* cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cjson.c; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		2B6855E81DCF72D60009ABFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B6855E71DCF72D60009ABFD /* iperf.app */,
+				2B6855E71DCF72D60009ABFD /* iperf hs.app */,
 				B692F604227D907600BE7313 /* Tests.xctest */,
 			);
 			name = Products;
@@ -293,9 +293,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B6855E61DCF72D60009ABFD /* iperf */ = {
+		2B6855E61DCF72D60009ABFD /* iperf hs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B6855FE1DCF72D60009ABFD /* Build configuration list for PBXNativeTarget "iperf" */;
+			buildConfigurationList = 2B6855FE1DCF72D60009ABFD /* Build configuration list for PBXNativeTarget "iperf hs" */;
 			buildPhases = (
 				2B5F0AA1228CB56F007D5E7D /* ShellScript */,
 				2B6855E31DCF72D60009ABFD /* Sources */,
@@ -306,9 +306,9 @@
 			);
 			dependencies = (
 			);
-			name = iperf;
+			name = "iperf hs";
 			productName = iperf;
-			productReference = 2B6855E71DCF72D60009ABFD /* iperf.app */;
+			productReference = 2B6855E71DCF72D60009ABFD /* iperf hs.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B692F603227D907600BE7313 /* Tests */ = {
@@ -350,7 +350,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2B6855E21DCF72D60009ABFD /* Build configuration list for PBXProject "iperf" */;
+			buildConfigurationList = 2B6855E21DCF72D60009ABFD /* Build configuration list for PBXProject "iperf hs" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -363,7 +363,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B6855E61DCF72D60009ABFD /* iperf */,
+				2B6855E61DCF72D60009ABFD /* iperf hs */,
 				B692F603227D907600BE7313 /* Tests */,
 			);
 		};
@@ -455,7 +455,7 @@
 /* Begin PBXTargetDependency section */
 		B692F60A227D907600BE7313 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B6855E61DCF72D60009ABFD /* iperf */;
+			target = 2B6855E61DCF72D60009ABFD /* iperf hs */;
 			targetProxy = B692F609227D907600BE7313 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -625,7 +625,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teapotapps.iperf.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf.app/iperf";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf hs.app/iperf hs";
 			};
 			name = Debug;
 		};
@@ -648,14 +648,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teapotapps.iperf.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf.app/iperf";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iperf hs.app/iperf hs";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B6855E21DCF72D60009ABFD /* Build configuration list for PBXProject "iperf" */ = {
+		2B6855E21DCF72D60009ABFD /* Build configuration list for PBXProject "iperf hs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B6855FC1DCF72D60009ABFD /* Debug */,
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B6855FE1DCF72D60009ABFD /* Build configuration list for PBXNativeTarget "iperf" */ = {
+		2B6855FE1DCF72D60009ABFD /* Build configuration list for PBXNativeTarget "iperf hs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B6855FF1DCF72D60009ABFD /* Debug */,
